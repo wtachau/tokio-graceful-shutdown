@@ -60,7 +60,7 @@ where
     fn run(
         self,
         subsys: SubsystemHandle<ErrWrapper>,
-    ) -> impl std::future::Future<Output = Result<(), Err>> + Send;
+    ) -> impl Future<Output = Result<(), Err>> + Send;
 
     /// Converts the object into a type that can be passed into
     /// [`SubsystemHandle::start()`](crate::SubsystemHandle::start).
